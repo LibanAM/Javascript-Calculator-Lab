@@ -142,9 +142,40 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+test('can multiply two small positive numbers', () => {
+    expected = 20;
+    actual = multiply(10, 2);
+    expect(actual).toBe(expected);
+  })
+
+  test('can multiply two large positive numbers', () => {
+    expected = 2250;
+    actual = multiply(30, 75);
+    expect(actual).toBe(expected);
+  })
+
+  test('can multiply two negative numbers', () => {
+    expected = 35;
+    actual = multiply(-5, -7);
+    expect(actual).toBe(expected);
+  })
+
+  test('can multiply a positive and a negative number', () => {
+    expected = -20;
+    actual = multiply(5, -4);
+    expect(actual).toBe(expected);
+  })
+
+  test('can multiply zero', () => {
+    expected = 0;
+    actual = multiply(10, 0);
+    expect(actual).toBe(expected);
+  })
 });
 
 describe('even', () => {
+
+  
 
 });
 
