@@ -175,7 +175,11 @@ test('can multiply two small positive numbers', () => {
 
 describe('even', () => {
 
-  
+  test('can check if number is even', () => {
+    expected = true;
+    actual = even(2);
+    expect(actual).toBe(expected);
+  })
 
 });
 
