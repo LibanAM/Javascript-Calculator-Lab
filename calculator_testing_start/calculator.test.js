@@ -185,4 +185,10 @@ describe('even', () => {
 
 describe('odd', () => {
 
+  test('can check if number is odd', () => {
+    expected = true;
+    actual = odd(3);
+    expect(actual).toBe(expected);
+  })
+
 });
